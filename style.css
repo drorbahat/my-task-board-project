@@ -13,11 +13,11 @@ form {
     background-image: url("Assets/formbg.jpg");
 }
 
-h4{
+h4 {
     padding: 13px;
 }
 
-h5{
+h5 {
     padding: 7px;
 }
 
@@ -31,7 +31,7 @@ textarea {
     resize: none;
 }
 
-#time-and-date-input{
+#time-and-date-input {
     padding: 10px;
 }
 
@@ -58,6 +58,14 @@ textarea {
     overflow: auto;
 }
 
+#output-note-container {
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+}
+
 .note {
     width: 220px;
     height: 280px;
@@ -72,10 +80,55 @@ textarea {
     background-size: cover;
 }
 
-.time-and-date-output{
+.time-and-date-output {
     width: 120px;
     height: 50px;
     margin-top: 20px;
     margin-left: 10px;
     font-size: 10pt;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
