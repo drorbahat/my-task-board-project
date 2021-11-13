@@ -13,11 +13,26 @@
 
 <body>
 
+    <div id="title">My Task Board</div>
+
     <div id="input-container">
+        <form>
+            <div id="note-form">
+                <textarea name="note-text-input" id="note-text-input" placeholder="Enter Your Note" rows="5"></textarea>
+                <br>
+                <label for="date">Select Date</label>
+                <input type="date" name="date" id="date-selector">
+                <label for="time">Select time</label>
+                <input type="time" name="time" id="time-selector">
+                <br>
+                <button type="button" id="add-button" class="btn btn-success" onclick="addNote()">Add Note</button>
+            </div>
+        </form>
     </div>
 
     <div id="output-container">
     </div>
+    
 </body>
 
 </html>

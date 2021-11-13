@@ -1,0 +1,42 @@
+body {
+    background-image: url(Assets/tile.jpg);
+    background-repeat: repeat;
+}
+
+form {
+    margin: auto;
+    width: 25%;
+    height: 20%;
+    /* min-width: 500px; */
+    min-height: 160px;
+    display: block;
+    background-image: url("Assets/formbg.jpg");
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 0px solid #ccc;
+    background-color: #f8f8f800;
+    resize: none;
+  }
+
+#note-form {
+    margin: auto;
+    min-width: 285px;
+    margin-top: 3px;
+}
+
+#title{
+    text-align: center;
+    font-family: cursive;
+    font-size: 40pt;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+#add-button{
+    width: 100%;
+}
