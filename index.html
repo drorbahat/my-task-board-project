@@ -18,8 +18,11 @@
     <div id="input-container">
         <form>
             <div id="note-form">
+                <h4>Task:</h4>
                 <textarea name="note-text-input" id="note-text-input" placeholder="Enter Your Note" rows="5"></textarea>
                 <br>
+                <h5>Done until:</h5>
+                <div id="time-and-date-input"></div>
                 <label for="date">Select Date</label>
                 <input type="date" name="date" id="date-selector">
                 <label for="time">Select time</label>
@@ -30,9 +33,13 @@
         </form>
     </div>
 
-    <div id="output-container">
+    <div id="output-main-container">
+        <div id="output-note-container" class="note">
+            <div id="note-text-output">Output Example</div>
+            <div class="time-and-date-output" id="time-and-date-output">2021-11-01<br>04:03</div>
+        </div>
     </div>
-    
+
 </body>
 
 </html>
