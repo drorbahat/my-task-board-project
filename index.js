@@ -4,7 +4,6 @@ let timeInputElement = document.getElementById("time-selector")
 
 let notesOutputContainer = document.getElementById("output-main-container")
 
-
 const addNote = () => {
     if (textInputElement.value === '' || dateInputElement.value === '' || timeInputElement.value === '') {
         alert("All fields are necessary, please fill the note and try again.")
@@ -47,12 +46,13 @@ const loadNotes = () => {
     }
     let noteContainer = ``
     for (let note of notesList) {
-        noteContainer += `<div id="output-note-container" class="note" onmouseover="showClearButton()" onmouseout="hideClearButton()">
-        <div id="note-text-output" >${note.text}</div>
-        <div class="time-and-date-output" id="time-and-date-output">${note.date}<br>${note.time}</div>
-        <button type="button" id="delete-note" class="close" aria-label="Close" onclick="deleteNote(${note.id})" >
-        <span aria-hidden="true">&times;</span>
-        </button>
+        noteContainer += `
+        <div id="output-note-container" class="note" onmouseover="showClearButton()" onmouseout="hideClearButton()">
+         <div id="note-text-output" >${note.text}</div>
+            <div class="time-and-date-output" id="time-and-date-output">${note.date}<br>${note.time}</div>
+            <button type="button" id="delete-note" class="close" aria-label="Close" onclick="deleteNote(${note.id})" >
+                <span aria-hidden="true">&times;</span>
+            </button>
         </div>`
     }
     notesOutputContainer.innerHTML = noteContainer
