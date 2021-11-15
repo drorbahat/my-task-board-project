@@ -25,7 +25,7 @@ const addNote = () => {
         notesList = []
     }
 
-    notesList.push(newNote)
+    notesList.unshift(newNote)
 
     let toJson = JSON.stringify(notesList)
     localStorage.setItem("notes-list", toJson)
